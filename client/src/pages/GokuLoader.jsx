@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ImageKit from "../components/ImageKit";
+import ImageKit from "../components/Common/ImageKit";
 
 export default function GokuSpaceLoader() {
   const [progress, setProgress] = useState(0);

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
-import { PATHS } from '../routes';
 import { Show, SignInButton, SignUpButton, UserButton } from '@clerk/react'
+import { PATHS } from '../../routes';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);

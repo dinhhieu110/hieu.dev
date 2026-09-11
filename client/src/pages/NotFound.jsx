@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { PATHS } from "../routes"; // Adjust path to your routes file
 import { Home, Compass } from "lucide-react";
-import ImageKit from "../components/ImageKit";
+import ImageKit from "../components/Common/ImageKit";
 
 export default function NotFound() {
   return (
