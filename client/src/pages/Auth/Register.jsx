@@ -1,9 +1,9 @@
-import React from 'react'
+import { SignUp } from '@clerk/react'
 
 const Register = () => {
   return (
-    <div>
-      Register
+    <div className='flex justify-center items-center h-[calc(100vh-80px)]'>
+      <SignUp signInUrl='/login' />
     </div>
   )
 }

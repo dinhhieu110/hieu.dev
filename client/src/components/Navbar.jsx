@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom';
 import { PATHS } from '../routes';
+import { Show, SignInButton, SignUpButton, UserButton } from '@clerk/react'
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -23,6 +24,13 @@ const Navbar = () => {
           <Link to={PATHS.HOME} >
             <button className='py-2 px-4 rounded-3xl bg-primary-gradient hover:bg-primary-gradient-hover text-white'>Login</button>
           </Link>
+          <Show when="signed-out">
+            <SignInButton />
+            <SignUpButton />
+          </Show>
+          <Show when="signed-in">
+            <UserButton />
+          </Show>
         </div>
       </div>
       {/* Desktop menu */}
@@ -31,11 +39,16 @@ const Navbar = () => {
         <Link to={PATHS.POSTS} >Trending</Link>
         <Link to={PATHS.SINGLE_POST} >Most Popular</Link>
         <Link to={PATHS.HOME} >About</Link>
-        <Link to={PATHS.HOME} >
-          <button className='py-2 px-4 rounded-3xl bg-primary-gradient hover:bg-primary-gradient-hover text-white'>Login</button>
-        </Link>
+        <Show when="signed-out">
+          <Link to="/login" >
+            <button className='py-2 px-6 rounded-3xl bg-primary-gradient hover:bg-primary-gradient-hover text-white'>Login</button>
+          </Link>
+          <SignUpButton />
+        </Show>
+        <Show when="signed-in">
+          <UserButton />
+        </Show>
       </div>
-
     </div>
   )
 }
