@@ -3,9 +3,11 @@ import Navbar from '../components/Common/Navbar'
 
 const MainLayout = () => {
   return (
-    <div className='px-4 md:px-8 lg:px-16 lx:px-32 2xl::px-64'>
+    <div >
       <Navbar />
-      <Outlet />
+      <div className='px-4 md:px-8 lg:px-16 lx:px-32 2xl::px-64 mt-8'>
+        <Outlet />
+      </div>
     </div>
   )
 }

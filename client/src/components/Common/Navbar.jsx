@@ -6,7 +6,7 @@ import { PATHS } from '../../routes';
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className='w-full h-16 md:h-20 flex items-center justify-between'>
+    <div className='w-full h-16 md:h-20 flex items-center justify-between sticky top-0 z-50 bg-white px-4 md:px-8 lg:px-16 lx:px-32 2xl::px-64 shadow-md'>
       {/* LOGO */}
       <Link to={PATHS.HOME} className='flex items-center gap-4 text-2xl font-bold'>
         <span className='text-primary-gradient hover:text-primary-gradient-hover cursor-pointer'>&lt;hieu.dev/&gt;</span>

@@ -1,6 +1,7 @@
 import Introduction from "../components/Modules/Home/Introduction"
 import BreadCrumbs from "../components/Common/BreadCrumbs"
 import Categories from "../components/Modules/Home/Categories"
+import FeaturedPosts from "../components/Modules/Home/FeaturedPosts"
 
 const Home = () => {
   return (
@@ -8,7 +9,7 @@ const Home = () => {
       <BreadCrumbs />
       <Introduction />
       <Categories />
-      {/* Featured Posts */}
+      <FeaturedPosts />
       {/* Posts List */}
     </div>
   )
