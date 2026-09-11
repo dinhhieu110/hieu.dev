@@ -20,88 +20,117 @@ export default function GokuSpaceLoader() {
   }, []);
 
   return (
-    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#010312] text-white overflow-hidden select-none">
+    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#030712] text-white overflow-hidden select-none">
 
-      {/* ================= REALISTIC COSMOS BACKGROUND ================= */}
-      {/* Cosmic Nebulae */}
-      <div className="absolute top-[-10%] left-[20%] w-[600px] h-[600px] rounded-full bg-blue-600/15 blur-[160px] pointer-events-none" />
-      <div className="absolute bottom-[-10%] right-[10%] w-[700px] h-[700px] rounded-full bg-purple-600/15 blur-[180px] pointer-events-none" />
+      {/* ================= CYBER SPACE GRID BACKGROUND ================= */}
+      {/* Curved Perspective Radar Grid Background */}
+      <div
+        className="absolute inset-0 opacity-25 pointer-events-none"
+        style={{
+          backgroundImage: `
+            radial-gradient(circle at 50% 50%, transparent 20%, rgba(56, 189, 248, 0.15) 21%, transparent 22%),
+            radial-gradient(circle at 50% 50%, transparent 40%, rgba(56, 189, 248, 0.15) 41%, transparent 42%),
+            radial-gradient(circle at 50% 50%, transparent 60%, rgba(56, 189, 248, 0.15) 61%, transparent 62%),
+            radial-gradient(circle at 50% 50%, transparent 80%, rgba(56, 189, 248, 0.15) 81%, transparent 82%),
+            linear-gradient(to right, rgba(56, 189, 248, 0.1) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(56, 189, 248, 0.1) 1px, transparent 1px)
+          `,
+          backgroundSize: '100% 100%, 100% 100%, 100% 100%, 100% 100%, 40px 40px, 40px 40px'
+        }}
+      />
 
-      {/* Realistic Planet Earth (Top Right) */}
-      <div className="absolute top-[6%] right-[10%] w-52 h-52 rounded-full shadow-[0_0_50px_rgba(59,130,246,0.6),inset_-25px_-25px_50px_rgba(0,0,0,0.95)] opacity-90 pointer-events-none overflow-hidden bg-gradient-to-br from-[#1d4ed8] via-[#0284c7] to-[#020617]">
-        {/* Oceans and Continents */}
-        <div className="absolute top-[20%] left-[15%] w-20 h-16 bg-emerald-600/80 rounded-full blur-[6px] transform -rotate-12" />
-        <div className="absolute top-[50%] left-[40%] w-24 h-20 bg-emerald-700/80 rounded-full blur-[8px] transform rotate-45" />
-        <div className="absolute bottom-[10%] left-[20%] w-16 h-12 bg-emerald-600/70 rounded-full blur-[5px]" />
+      {/* Starfield / Grid Dots */}
+      <div className="absolute inset-0 opacity-40 bg-[radial-gradient(#38bdf8_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none" />
 
-        {/* Swirling White Clouds */}
-        <div className="absolute top-[10%] left-[-10%] w-[120%] h-8 bg-white/40 blur-[4px] transform -rotate-12 rounded-full" />
-        <div className="absolute top-[45%] left-[-10%] w-[130%] h-10 bg-white/30 blur-[5px] transform rotate-6 rounded-full" />
-        <div className="absolute top-[70%] left-[-10%] w-[110%] h-6 bg-white/35 blur-[4px] transform -rotate-6 rounded-full" />
-
-        {/* Earth Atmosphere Glow */}
-        <div className="absolute inset-0 rounded-full border border-sky-300/40 shadow-[inset_0_0_20px_#38bdf8]" />
-      </div>
-
-      {/* Realistic Ringed Gas Giant / Jupiter (Bottom Left) */}
-      <div className="absolute bottom-[5%] left-[6%] w-72 h-72 flex items-center justify-center pointer-events-none opacity-85">
-        <div className="relative w-64 h-64 rounded-full bg-gradient-to-b from-[#ea580c] via-[#ca8a04] to-[#451a03] shadow-[0_0_60px_rgba(234,88,12,0.4),inset_-30px_-30px_60px_rgba(0,0,0,0.95)] overflow-hidden">
-          <div className="absolute top-[15%] inset-x-0 h-4 bg-[#7c2d12]/70 blur-[1px]" />
-          <div className="absolute top-[28%] inset-x-0 h-6 bg-[#fef08a]/30 blur-[2px]" />
-          <div className="absolute top-[45%] inset-x-0 h-8 bg-[#9a3412]/80 blur-[1px]" />
-          <div className="absolute top-[65%] inset-x-0 h-5 bg-[#fde047]/20 blur-[2px]" />
-          <div className="absolute top-[50%] right-[25%] w-10 h-7 bg-[#b91c1c] rounded-full blur-[1px] opacity-80" />
-        </div>
-
-        <div className="absolute w-[360px] h-[40px] border-[10px] border-[#fde047]/30 rounded-[100%] transform -rotate-[22deg] blur-[0.5px] shadow-[0_0_15px_rgba(253,224,71,0.2)]" />
-        <div className="absolute w-[380px] h-[46px] border-[4px] border-[#f97316]/40 rounded-[100%] transform -rotate-[22deg] blur-[1px]" />
-      </div>
-
-      {/* Twinkling Starfield */}
-      <div className="absolute inset-0 opacity-45 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:28px_28px]" />
+      {/* Nebulae Glows */}
+      <div className="absolute top-[20%] left-[15%] w-[450px] h-[450px] rounded-full bg-cyan-600/10 blur-[140px] pointer-events-none" />
+      <div className="absolute top-[20%] right-[15%] w-[450px] h-[450px] rounded-full bg-amber-600/10 blur-[140px] pointer-events-none" />
       {/* ============================================================= */}
 
-      {/* Main Container */}
-      <div className="relative z-10 w-full max-w-6xl px-8 flex flex-col items-center">
+      {/* Main Layout Container */}
+      <div className="relative z-10 w-full max-w-6xl px-12 flex flex-col items-center">
 
-        {/* Action Area: Goku + Thick Power Beam */}
-        <div className="relative w-full flex items-center justify-start h-80">
+        {/* Planet Header Area */}
+        <div className="relative w-full flex justify-between items-center h-48 mb-6">
 
-          {/* 1. Goku Image Container */}
-          <div className="relative z-20 flex-shrink-0 flex items-center justify-center h-[260px]">
-            {/* Energy Aura */}
-            <div className="absolute inset-0 bg-cyan-400/25 blur-3xl rounded-full scale-125 animate-pulse" />
-
-            <ImageKit
-              src="/goku_kamehameha.png"
-              alt="Son Goku Kamehameha"
-              className="h-full w-auto object-contain relative z-10 drop-shadow-[0_0_30px_rgba(34,211,238,0.9)]"
-            />
+          {/* Blue Planet (Left) */}
+          <div className="relative w-44 h-44 rounded-full bg-gradient-to-tr from-sky-900 via-blue-600 to-teal-300 shadow-[0_0_50px_rgba(56,189,248,0.5),inset_-20px_-20px_40px_rgba(0,0,0,0.8)] overflow-hidden">
+            <div className="absolute inset-0 opacity-40 mix-blend-overlay bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white via-transparent to-black" />
+            {/* Planet Atmosphere Glow */}
+            <div className="absolute inset-0 rounded-full border border-sky-300/40 shadow-[inset_0_0_20px_#38bdf8]" />
           </div>
 
-          {/* 2. Beam Progress Bar (Pushed down 8px using translate-y-[8px]) */}
-          <div className="relative flex-1 h-[140px] -ml-[72px] flex items-center z-10 transform translate-y-[12px]">
+          {/* Orange Ringed Gas Giant (Right) */}
+          <div className="relative w-52 h-52 flex items-center justify-center">
+            {/* Planet Sphere */}
+            <div className="relative w-44 h-44 rounded-full bg-gradient-to-b from-[#ea580c] via-[#9a3412] to-[#451a03] shadow-[0_0_50px_rgba(234,88,12,0.4),inset_-20px_-20px_40px_rgba(0,0,0,0.9)] overflow-hidden">
+              <div className="absolute top-[25%] inset-x-0 h-4 bg-[#fde047]/20 blur-[1px]" />
+              <div className="absolute top-[50%] inset-x-0 h-6 bg-[#7c2d12]/80 blur-[1px]" />
+              <div className="absolute top-[65%] right-[20%] w-8 h-5 bg-[#b91c1c] rounded-full blur-[1px] opacity-80" />
+            </div>
+            {/* Outer Rings */}
+            <div className="absolute w-[240px] h-[24px] border-[6px] border-[#fde047]/40 rounded-[100%] transform -rotate-[18deg] blur-[0.5px] shadow-[0_0_15px_rgba(253,224,71,0.3)] pointer-events-none" />
+            <div className="absolute w-[260px] h-[28px] border-[2px] border-[#ea580c]/50 rounded-[100%] transform -rotate-[18deg] blur-[1px] pointer-events-none" />
+          </div>
 
-            {/* Track Frame */}
-            <div className="w-full h-full bg-slate-950/80 border-2 border-cyan-400/50 rounded-r-full p-2 shadow-[inset_0_0_30px_rgba(0,0,0,0.95)] overflow-hidden flex items-center">
-              {/* Progress Beam Fill */}
-              <div
-                className="h-full rounded-r-full bg-gradient-to-r from-cyan-400 via-sky-100 to-white transition-all duration-300 ease-out relative flex items-center justify-end shadow-[0_0_40px_#38bdf8,0_0_80px_#0284c7,0_0_120px_#38bdf8]"
-                style={{ width: `${progress}%` }}
-              >
-              </div>
+        </div>
 
+        {/* Flight Track & Moving Goku Area */}
+        <div className="relative w-full h-32 flex items-center">
+
+          {/* 1. Thin Glowing Laser Progress Bar */}
+          <div className="relative w-full h-[3px] bg-cyan-900/60 rounded-full overflow-visible shadow-[0_0_10px_rgba(6,182,212,0.5)]">
+
+            {/* Active Progress Beam */}
+            <div
+              className="h-full bg-gradient-to-r from-cyan-500 via-sky-300 to-white shadow-[0_0_15px_#38bdf8,0_0_30px_#38bdf8] transition-all duration-200 ease-out relative"
+              style={{ width: `${progress}%` }}
+            />
+
+            {/* Target Ring Node at Right Endpoint */}
+            <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-7 h-7 rounded-full border-2 border-cyan-400/80 flex items-center justify-center shadow-[0_0_15px_#38bdf8]">
+              <div className="w-2 h-2 rounded-full animate-ping" />
             </div>
           </div>
 
+          {/* 2. Flying Goku Dynamic Position */}
+          <div
+            className="absolute z-20 top-1/2 -translate-y-1/2 transition-all duration-200 ease-out pointer-events-none flex flex-col items-center"
+            style={{
+              left: `calc(${progress}% - 140px)`, // Offsets image to keep Goku centered on the progress tip
+            }}
+          >
+            {/* Super Saiyan Aura Effect Container */}
+            <div className="relative flex items-center justify-center">
+
+              {/* Back Energy Aura Glow */}
+              <div className="absolute w-72 h-44 bg-gradient-to-r from-cyan-400/30 via-amber-300/40 to-transparent blur-xl rounded-full animate-pulse" />
+
+              {/* Flying Goku PNG Image */}
+              <ImageKit
+                src="/spaceship (2).png"
+                alt="Son Goku Flying Super Saiyan"
+              />
+            </div>
+
+            {/* Percentage Display Under Goku */}
+            <div className="mt-[-8px] relative z-20 bg-slate-950/80 border border-cyan-400/50 px-2.5 py-0.5 rounded-full shadow-[0_0_10px_rgba(56,189,248,0.5)]">
+              <span className="text-xs font-black italic tracking-wider text-cyan-300">
+                {Math.round(progress)}%
+              </span>
+            </div>
+
+          </div>
+
         </div>
 
-        {/* Status Text & Percentage */}
-        <div className="mt-8 text-center space-y-2 relative z-10">
-          <div className="text-4xl font-black italic tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-200 to-white drop-shadow-[0_4px_20px_rgba(56,189,248,0.8)]">
-            {progress >= 100 ? "KAME...HAME... HA!!!" : `KAME...HAME... ${Math.round(progress)}%`}          </div>
-          <p className="text-xs uppercase tracking-[0.4em] text-cyan-300/80 font-bold animate-pulse">
-            Charging Ki Across the Cosmos
+        {/* Text Status & Subtitle */}
+        <div className="mt-10 text-center space-y-2 relative z-10">
+          <h1 className="text-4xl md:text-5xl font-black italic tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-sky-200 to-white drop-shadow-[0_4px_20px_rgba(56,189,248,0.7)]">
+            {progress >= 100 ? "DESTINATION REACHED!" : `WARPING ACROSS SPACE... ${Math.round(progress)}%`}
+          </h1>
+          <p className="text-xs md:text-sm uppercase tracking-[0.45em] text-cyan-400/80 font-bold">
+            Goku is traversing the galaxy to your page
           </p>
         </div>
 
