@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Image } from '@imagekit/react';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -7,7 +6,6 @@ const Navbar = () => {
     <div className='w-full h-16 md:h-20 flex items-center justify-between'>
       {/* LOGO */}
       <div className='flex items-center gap-4 text-2xl font-bold'>
-        <Image urlEndpoint={import.meta.env.VITE_IK_URL_ENDPOINT} path="/logo.png" className='w-8 h-8' alt="" />
         <span className='text-primary-gradient hover:text-primary-gradient-hover cursor-pointer'>&lt;hieu.dev/&gt;</span>
       </div>
       {/* Mobile menu */}
