@@ -3,6 +3,7 @@ import ImageKit from "../components/Common/ImageKit";
 import MenuActions from "../components/Modules/singlepost/MenuActions";
 import { PATHS } from "../routes";
 import Search from "../components/Modules/singlepost/Search";
+import Comments from "../components/Modules/singlepost/Comments";
 
 
 const CATEGORIES = [
@@ -220,6 +221,7 @@ const SinglePost = () => {
           <Search />
         </div>
       </div>
+      <Comments />
     </div>
   )
 }
