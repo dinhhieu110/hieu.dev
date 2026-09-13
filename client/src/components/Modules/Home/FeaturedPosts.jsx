@@ -6,7 +6,7 @@ const FeaturedPosts = () => {
     <div className='mt-8 flex flex-col lg:flex-row gap-8'>
       {/* First */}
       <div className="w-full lg:w-1/2 flex flex-col gap-4">
-        <ImageKit src="/featured1.jpeg" className="rounded-3xl object-cover" />
+        <ImageKit src="/featured1.jpeg" className="rounded-3xl object-cover" w="895" />
         <div className="flex items-start gap-4">
           <h1 className="font-semibold lg:text-lg">01.</h1>
           <Link className="text-primary-gradient lg:text-lg">Web Design</Link>
@@ -17,7 +17,9 @@ const FeaturedPosts = () => {
       {/* Others */}
       <div className="w-full lg:w-1/2 flex flex-col gap-4">
         <div className="lg:h-1/3 flex justify-between gap-4">
-          <ImageKit src="/featured2.jpeg" className="rounded-3xl object-cover w-1/3 aspect-video" />
+          <div className="w-1/3 aspect-video">
+            <ImageKit src="/featured2.jpeg" className="rounded-3xl object-cover w-full h-full" w="298" />
+          </div>
           <div className="w-2/3 ">
             <div className="flex items-center gap-4 text-sm lg:text-base mb-4">
               <h1 className="font-semibold">02. </h1>
@@ -28,7 +30,9 @@ const FeaturedPosts = () => {
           </div>
         </div>
         <div className="lg:h-1/3 flex justify-between gap-4">
-          <ImageKit src="/featured3.jpeg" className="rounded-3xl object-cover w-1/3 aspect-video" />
+          <div className="w-1/3 aspect-video">
+            <ImageKit src="/featured3.jpeg" className="rounded-3xl object-cover  w-full h-full" w="298" />
+          </div>
           <div className="w-2/3 ">
             <div className="flex items-center gap-4 text-sm lg:text-base mb-4">
               <h1 className="font-semibold">02. </h1>
@@ -39,7 +43,9 @@ const FeaturedPosts = () => {
           </div>
         </div>
         <div className="lg:h-1/3 flex justify-between gap-4">
-          <ImageKit src="/featured4.jpeg" className="rounded-3xl object-cover w-1/3 aspect-video" />
+          <div className="w-1/3 aspect-video">
+            <ImageKit src="/featured4.jpeg" className="rounded-3xl object-cover  w-full h-full" w="298" />
+          </div>
           <div className="w-2/3 ">
             <div className="flex items-center gap-4 text-sm lg:text-base mb-4">
               <h1 className="font-semibold">02. </h1>

@@ -9,7 +9,14 @@ const Image = ({ src, className, w, h, alt }) => {
       loading='lazy'
       width={w}
       height={h}
-      alt={alt} />
+      alt={alt}
+      transformation={[
+        {
+          width: w,
+          height: h
+        }
+      ]}
+    />
   )
 }
 
