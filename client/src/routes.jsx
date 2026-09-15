@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import GokuSpaceLoader from "./pages/GokuLoader";
+import Loader from "./pages/Loader";
 
 export const PATHS = Object.freeze({
   HOME: "/",
@@ -12,17 +12,17 @@ export const PATHS = Object.freeze({
 });
 const MainLayOut = lazy(() => import("./layouts/MainLayout"));
 const Home = lazy(() => import("./pages/Home"));
-const PostList = lazy(() => import("./pages/PostList"));
+const PostList = lazy(() => import("./pages/PostListPage"));
 const SinglePost = lazy(() => import("./pages/SinglePost"));
 const Write = lazy(() => import("./pages/Write"));
-const Login = lazy(() => import("./pages/Auth/Login"));
+const Login = lazy(() => import("./pages/auth/Login"));
 const Register = lazy(() => import("./pages/Auth/Register"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 
 
 const withSuspense = (Component) => (
-  <Suspense fallback={<GokuSpaceLoader />}>
+  <Suspense fallback={<Loader />}>
     <Component />
   </Suspense>
 );
