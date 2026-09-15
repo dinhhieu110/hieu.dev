@@ -21,7 +21,6 @@ const Categories = () => {
 
   return (
     <div aria-label="Blog categories" className='hidden md:flex items-center justify-center rounded-3xl xl:rounded-full p-4 shadow-lg gap-8'>
-      {/* links */}
       <div role='tablist' className="flex-1 flex items-center gap-4 xl:gap-32 overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
         {CATEGORIES.map(({ label, slug }) => {
           const isActive = slug === null ? !currentCategory : currentCategory === slug
