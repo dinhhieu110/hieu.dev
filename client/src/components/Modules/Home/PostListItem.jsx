@@ -3,13 +3,13 @@ import ImageKit from "../../Common/ImageKit"
 import { Link } from 'react-router-dom'
 const PostListItem = () => {
   return (
-    <div className='flex flex-col xl:flex-row gap-8'>
+    <div className='flex flex-col xl:flex-row gap-8 hover:bg-neutral-100 p-4 rounded-2xl'>
       <div className="md:hidden xl:block xl:w-1/3">
         <ImageKit src="postImg.jpeg" className="rounded-2xl object-cover" w="735" />
       </div>
       {/* details */}
       <div className='flex flex-col gap-4 xl:w-2/3'>
-        <Link to={PATHS.SINGLE_POST} className='text-4xl font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut rei aliquid quo Dolorem.</Link>
+        <Link to={PATHS.SINGLE_POST} className='text-4xl font-semibold hover:underline'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut rei aliquid quo Dolorem.</Link>
         <div className="flex items-center gap-4 text-gray-400 text-sm">
           <span>Written by</span>
           <Link className='text-primary-gradient'>Tran Dinh Hieu</Link>

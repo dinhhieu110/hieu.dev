@@ -13,7 +13,7 @@ const FeaturedPosts = () => {
           <Link className="text-primary-gradient lg:text-lg">Web Design</Link>
           <span className="text-gray-500 bg-gray-300 mt-1">2 days ago</span>
         </div>
-        <Link to={PATHS.SINGLE_POST} className="text-lg lg:text-3xl font-semibold lg:font-bold">Lorem ipsum dolor sit, amet consectodi.</Link>
+        <Link to={PATHS.SINGLE_POST} className="text-lg lg:text-3xl font-semibold lg:font-bold hover:underline">Lorem ipsum dolor sit, amet consectodi.</Link>
       </div>
       {/* Others */}
       <div className="w-full lg:w-1/2 flex flex-col gap-4">
@@ -27,7 +27,7 @@ const FeaturedPosts = () => {
               <Link className="text-primary-gradient">Web Design</Link>
               <span className="text-gray-500 bg-gray-300 mt-1 text-sm">2 days ago</span>
             </div>
-            <Link to={PATHS.SINGLE_POST} className="text-base sm:text-lg md:text-2xl lg:text-xl xl:text-2xl font-medium">Lorem ipsum dolor sit, amet consectodi.</Link>
+            <Link to={PATHS.SINGLE_POST} className="text-base sm:text-lg md:text-2xl lg:text-xl xl:text-2xl font-medium hover:underline">Lorem ipsum dolor sit, amet consectodi.</Link>
           </div>
         </div>
         <div className="lg:h-1/3 flex justify-between gap-4">
@@ -40,7 +40,7 @@ const FeaturedPosts = () => {
               <Link className="text-primary-gradient">Web Design</Link>
               <span className="text-gray-500 bg-gray-300 mt-1 text-sm">2 days ago</span>
             </div>
-            <Link to={PATHS.SINGLE_POST} className="text-base sm:text-lg md:text-2xl lg:text-xl xl:text-2xl font-medium">Lorem ipsum dolor sit, amet consectodi.</Link>
+            <Link to={PATHS.SINGLE_POST} className="text-base sm:text-lg md:text-2xl lg:text-xl xl:text-2xl font-medium hover:underline">Lorem ipsum dolor sit, amet consectodi.</Link>
           </div>
         </div>
         <div className="lg:h-1/3 flex justify-between gap-4">
@@ -53,7 +53,7 @@ const FeaturedPosts = () => {
               <Link className="text-primary-gradient">Web Design</Link>
               <span className="text-gray-500 bg-gray-300 mt-1 text-sm">2 days ago</span>
             </div>
-            <Link to={PATHS.SINGLE_POST} className="text-base sm:text-lg md:text-2xl lg:text-xl xl:text-2xl font-medium">Lorem ipsum dolor sit, amet consectodi.</Link>
+            <Link to={PATHS.SINGLE_POST} className="text-base sm:text-lg md:text-2xl lg:text-xl xl:text-2xl font-medium hover:underline">Lorem ipsum dolor sit, amet consectodi.</Link>
           </div>
         </div>
       </div>
