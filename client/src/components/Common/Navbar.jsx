@@ -18,9 +18,9 @@ const Navbar = () => {
         </div>
         <div className={`w-full h-screen flex flex-col items-center justify-center gap-8 font-medium text-lg absolute top-16 transition-all ease-in-out ${open ? "right-0" : "-right-[100%]"}`}>
           <Link to={PATHS.HOME} >Home</Link>
+          <Link to={PATHS.ABOUT_ME} >About Me</Link>
           <Link to={PATHS.POSTS} >Trending</Link>
           <Link to={PATHS.SINGLE_POST} >Most Popular</Link>
-          <Link to={PATHS.HOME} >About</Link>
           <Link to={PATHS.HOME} >
             <button className='py-2 px-4 rounded-3xl bg-primary-gradient hover:bg-primary-gradient-hover text-white'>Login</button>
           </Link>
@@ -36,9 +36,9 @@ const Navbar = () => {
       {/* Desktop menu */}
       <div className='hidden md:flex items-center gap-8 xl:gap-12 font-medium'>
         <Link to={PATHS.HOME} >Home</Link>
+        <Link to={PATHS.ABOUT_ME} >About Me</Link>
         <Link to={PATHS.POSTS} >Trending</Link>
         <Link to={PATHS.SINGLE_POST} >Most Popular</Link>
-        <Link to={PATHS.HOME} >About</Link>
         <Show when="signed-out">
           <Link to="/login" >
             <button className='py-2 px-6 rounded-3xl bg-primary-gradient hover:bg-primary-gradient-hover text-white'>Login</button>

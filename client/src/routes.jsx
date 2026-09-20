@@ -3,6 +3,7 @@ import Loader from "./pages/Loader";
 
 export const PATHS = Object.freeze({
   HOME: "/",
+  ABOUT_ME: "/about-me",
   POSTS: "/posts",
   SINGLE_POST: "/posts/:slug",
   WRITE: "/write",
@@ -12,6 +13,7 @@ export const PATHS = Object.freeze({
 });
 const MainLayOut = lazy(() => import("./layouts/MainLayout"));
 const Home = lazy(() => import("./pages/Home"));
+const AboutMe = lazy(() => import("./pages/Portfolio"));
 const PostList = lazy(() => import("./pages/PostListPage"));
 const SinglePost = lazy(() => import("./pages/SinglePost"));
 const Write = lazy(() => import("./pages/Write"));
@@ -34,6 +36,10 @@ const routes = [
       {
         path: PATHS.HOME,
         element: withSuspense(Home),
+      },
+      {
+        path: PATHS.ABOUT_ME,
+        element: withSuspense(AboutMe),
       },
       {
         path: PATHS.POSTS,

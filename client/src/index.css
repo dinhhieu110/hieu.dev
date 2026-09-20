@@ -12,6 +12,11 @@
   }
 }
 
+html{
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
 body{
   background: #fff;
   width: 100vw;
